@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "g++",
+            "command": "C:/Qt/Qt5.13.2/Tools/mingw730_64/bin/g++.exe",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}.exe",
+                "-g",
+                "-m64",
+                "-Wall",
+                "-static-libgcc",
+                "-finput-charset=UTF-8",
+                "-fexec-charset=BIG5",
+                "-std=c++17",
+                "-I","C:/api/opencv-4.5.3/build/install/include",
+                "-I","C:/api/opencv-4.5.3/build/install/include/opencv2",
+                "-L","C:/api/opencv-4.5.3/build/install/x64/mingw/lib",
+                "-l","libopencv_calib3d453",
+                "-l","libopencv_core453",
+                "-l","libopencv_dnn453",
+                "-l","libopencv_features2d453",
+                "-l","libopencv_flann453",
+                "-l","libopencv_gapi453",
+                "-l","libopencv_highgui453",
+                "-l","libopencv_imgcodecs453",
+                "-l","libopencv_imgproc453",
+                "-l","libopencv_ml453",
+                "-l","libopencv_objdetect453",
+                "-l","libopencv_photo453",
+                "-l","libopencv_stitching453",
+                "-l","libopencv_video453",
+                "-l","libopencv_videoio453",
+            ],
+            "type": "process",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+        }
+       
+    ]
+}
